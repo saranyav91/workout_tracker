@@ -130,7 +130,10 @@ async function handleFormSubmit(event) {
   //if(!route1.flag){
 
   const workout = await API.getLastWorkout();
-  let id = workout._id;
+  let id;
+  if(workout){
+   id = workout._id;
+  }
   console.log("id" + id);
   console.log("flag" + flag);
   if (flag == null) {
