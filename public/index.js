@@ -158,7 +158,7 @@ async function handleFormSubmit(event) {
   //console.log(exercise);
 
 
-  await API.addExercise(workoutData1, workout._id);
+  await API.addExercise(workoutData1);
   var someVarName = true;
   localStorage.setItem("someVarKey", someVarName);
   clearInputs();
